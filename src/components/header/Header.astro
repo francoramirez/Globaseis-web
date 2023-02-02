@@ -1,11 +1,25 @@
+---
+---
+
 <div class="Container">
   <div class="HeaderBackground">
     <div class="flex flex-nowrap HeaderMenu">
-      <div class="flex-none w-15 h-15"></div>  
-      <div class="grow h-15 HeaderLogo bg-no-repeat"></div>
-      <div class="grow w-15 h-15">Menu</div>
-      <div class="flex-none h-50"></div>
+      <div class="flex-none lg:w-48 h-14"></div>
+      <div class="flex-auto lg:w-48 HeaderLogo bg-no-repeat"></div>
+      <div class="flex-none lg:w-64 h-14"></div>
+      <div class="flex-auto lg:w-20 HomeIcon bg-no-repeat"></div>
+      <div class="flex-auto lg:w-20 ContactIcon bg-no-repeat"></div>
+      <div class="flex-auto lg:w-8">
+        <button
+          type="button"
+          class="text-white bg-yellow-400 hover:bg-yellow-500 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:focus:ring-yellow-900"
+          >¡LL&Aacute;MANOS! (312)429-3824</button>
+      </div>
+      <div class="flex-none lg:w-64 h-14"></div>
     </div>
+  </div>
+  <div>
+    <h1>Partnership</h1>
   </div>
 </div>
 
@@ -30,5 +44,23 @@
     height: 650px;
     width: 100%;
     background-size: 250px;
+  }
+  .HomeIcon {
+    background-image: url("../public/icons/HeroiconsOutlineHome.svg");
+    height: 100px;
+    width: 100%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%)
+      hue-rotate(192deg) brightness(105%) contrast(101%);
+  }
+  .ContactIcon {
+    background-image: url("../public/icons/HeroiconsOutlinePhoneIncoming.svg");
+    height: 100px;
+    width: 100%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%)
+      hue-rotate(192deg) brightness(105%) contrast(101%);
+  }
+  .ContactButton {
+    display: inline-block;
+    vertical-align: middle;
   }
 </style>
